@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    color:#eee;
+    font-family: "Rubik", sans-serif;
+}
+
+
+body{
+    background-color: #111;
+    overflow: hidden;
+}
+
+.container{
+    width:80vw;
+    height: 80vh ;
+    margin: 10vh auto;
+}
+
+.content{
+    background-image:linear-gradient(90deg,rgb(100,100,100,0.2),rgb(200,200,200,0.2));
+    width:100%;
+    min-height: 100%;
+    border-radius:20px;
+    box-shadow:0 0 5px black;
+    padding: 30px 10%;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.header .nav ul {
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.header .logo h1{
+    font-size:40px;
+}
+.header .nav ul li a {
+    text-decoration:none;
+}
+
+.content .concept{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: relative;
+
+}
+.content .concept .text {
+    max-width: 500px;
+}
+.content .concept h1 {
+    font-size: 70px;
+}
+.content .concept p {
+    font-size: 20px;
+
+}
+.concept .image{
+    position: relative;
+}
+.concept .image img{
+    max-width:400px;
+}
+
+.test{
+    max-width: 1722px;
+    max-height: 1722px;
+    width:calc(1000px + 40vw);
+    height:calc(1000px + 40vw);
+    background: red;
+    position: absolute;
+    transition:0.3s;
+    bottom:-981px;
+    left:0;
+    z-index: -1;
+    border-radius: 50%;
+    transform-origin:left top;
+
+}
+@media screen and (max-width: 1404px){
+    .header{
+        flex-direction: column;
+        gap:40px;
+
+    }
+
+    .concept{
+        flex-direction: column;
+        gap:200px;
+    }
+    .text h1 {
+        font-size: 50px;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .image{
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x:hidden ;
+    }
+    .header{
+        margin-bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
