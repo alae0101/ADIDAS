@@ -1,9 +1,12 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
     color:#eee;
     font-family: "Rubik", sans-serif;
+
+
+    box-sizing:border-box;
+
 }
 
 
@@ -11,14 +14,20 @@ body{
     background-color: #111;
     overflow: hidden;
 }
+html{
+    overflow: hidden;
+    position:relative
+}
 
 .container{
+    /*overflow: hidden;*/
     width:80vw;
     height: 80vh ;
-    margin: 10vh auto;
+    margin:10vh auto
 }
 
 .content{
+    /*padding: 10vh auto;*/
     background-image:linear-gradient(90deg,rgb(100,100,100,0.2),rgb(200,200,200,0.2));
     width:100%;
     min-height: 100%;
@@ -74,8 +83,8 @@ body{
 .test{
     max-width: 1722px;
     max-height: 1722px;
-    width:calc(1000px + 40vw);
-    height:calc(1000px + 40vw);
+    width:calc(300px + 60vw);
+    height:calc(300px + 60vw);
     background: red;
     position: absolute;
     transition:0.3s;
@@ -110,14 +119,33 @@ body{
         align-items: center;
 
     }
-
+    .test{
+        bottom: 455px;
+        left: -549px;
+        width:100px;
+        height: 100px;
+        transform: scale(15,15);
+    }
     body{
-        width: 100vw;
-        height: 100vh;
-        overflow-x:hidden ;
+        max-width: 100vw;
+        max-height: 100vh;
+
     }
     .header{
         margin-bottom: 70px;
+    }
+    .con{
+        /*width:100vw;*/
+        /*height:100vh;*/
+        overflow-x: hidden;
+        /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+        /* overflow-x: hidden !important; */
+        /* Additional tunning proposed by the community */
+        /* IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        position: relative;
+        width: 100%;
+        height: 100%;
+
     }
 }
 
